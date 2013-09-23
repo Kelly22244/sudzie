@@ -1,0 +1,21 @@
+	<% if user_signed_in? %>
+		<div class="center hero-unit">
+
+		</div>
+
+<% else %>
+
+<div class="center hero-unit">
+	<h1>#GPS MAP#</h1>
+</div>
+
+<div class="well">
+	<h1>Welcome to sudzie</h1>
+	<p>
+	You've found the home page for sudzie. Sign up below
+	</p>
+	<p>
+	 <%= link_to "Sign Up Now!", new_user_registration_path, class: "btn btn-primary btn-large" %>
+	</p>
+</div>
+<% end %>
